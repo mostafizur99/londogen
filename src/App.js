@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import LayoutMain from "./layouts/LayoutMain";
 
-function App() {
+const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
