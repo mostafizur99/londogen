@@ -15,16 +15,14 @@ const App = () => {
           path: "/",
           element: (
             <div>
-              <h1> hello Londogen root</h1>
-              <Link to="about">About Us</Link>
+              <h1>Hello Londogen home page</h1>
             </div>
           ),
         },
         {
           path: "about",
           element: <div>
-            <h1>  About</h1>
-            <Link to="/">Home</Link>
+            <h1>About Page</h1>
           </div>
         },
       ]
