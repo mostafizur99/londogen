@@ -1,8 +1,9 @@
 import {
   createBrowserRouter,
   RouterProvider,
-  Link,
 } from "react-router-dom";
+import About from "./components/Abouts/About";
+import Home from "./components/Homes/Home";
 import LayoutMain from "./layouts/LayoutMain";
 
 const App = () => {
@@ -13,17 +14,11 @@ const App = () => {
       children: [
         {
           path: "/",
-          element: (
-            <div>
-              <h1>Hello Londogen home page</h1>
-            </div>
-          ),
+          element: <Home />,
         },
         {
           path: "about",
-          element: <div>
-            <h1>About Page</h1>
-          </div>
+          element: <About />
         },
       ]
     }
