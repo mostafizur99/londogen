@@ -29,10 +29,10 @@ const Header = () => {
                     </div>
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div className="flex flex-shrink-0 items-center">
-                            <h3 className='text-cyan-500 font-bold '>LondoGen</h3>
+                            <h3 className='text-cyan-500 font-extrabold text-lg border border-cyan-200 px-2 py-1 shadow-inner'>LondoGen</h3>
                         </div>
-                        <div className="hidden sm:ml-6 sm:block">
-                            <div className="flex space-x-4">
+                        <div className="hidden sm:ml-6 sm:block my-auto">
+                            <div className="flex space-x-4 items-center ">
                                 {navigation.map((item) => (
                                     <Link key={item.name} to={item.href}
                                         className={`text-gray-900 font-medium `}
