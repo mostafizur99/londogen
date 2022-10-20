@@ -14,6 +14,7 @@ const App = () => {
       children: [
         {
           path: "/",
+          loader: () => fetch('categoryDb.json'),
           element: <Home />,
         },
         {
