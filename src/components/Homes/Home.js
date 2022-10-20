@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLoaderData } from 'react-router-dom';
+import CategoryCard from '../categories/CategoryCard';
 
 const Home = () => {
     const categoryData = useLoaderData();
@@ -8,16 +9,20 @@ const Home = () => {
         <div className='container mx-auto'>
             Home Page
 
-            <div className='grid grid-cols-4 py-10'>
-                {
-                    categoryData &&
-                    categoryData.map(category => (
-                        <div key={category._id} className='mb-3'>
-                            <img src={category.picture} alt="category" />
-                            <h2>{category.title} </h2>
-                        </div>
-                    ))
-                }
+            <div className='py-10'>
+                <div className='mb-4 text-center'>
+                    <h2 className='text-lg font-bold'>Categories</h2>
+                </div>
+                <div className='grid grid-cols-4'>
+                    {
+                        categoryData &&
+                        categoryData.map(category =>
+                            <CategoryCard
+                                key={category._id}
+                                category={category} />
+                        )
+                    }
+                </div>
             </div>
         </div>
     )
