@@ -4,6 +4,7 @@ import {
 } from "react-router-dom";
 import About from "./components/Abouts/About";
 import Home from "./components/Homes/Home";
+import Review from "./components/Reviews/Review";
 import LayoutMain from "./layouts/LayoutMain";
 
 const App = () => {
@@ -20,6 +21,10 @@ const App = () => {
         {
           path: "about",
           element: <About />
+        },
+        {
+          path: "reviews",
+          element: <Review />
         },
       ]
     }
